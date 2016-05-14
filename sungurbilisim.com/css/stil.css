@@ -1,0 +1,81 @@
+nav {background-color:black;height: 40px;}
+nav ul li{list-style: none;display: inline-block;margin-top: 10px;}
+nav ul li a{color:white;padding: 10px;font-size: 16px;border-bottom:1px solid rgba(255, 255, 255, 0.28);}
+nav ul li a:hover{color:rgba(255, 255, 255, 0.28);text-decoration: none;border-bottom:1px solid white;}
+header{
+	position: relative;
+	height: 500px;
+	background-image: url('http://bgfons.com/upload/rainbow_texture660.jpg');
+	background-repeat:repeat;
+   -webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:top;
+}
+.container{background-color: white;}
+#girisyazisi{
+	position: absolute;
+	top: 40%;
+	left: 35%;
+	color:white;
+}
+#webdiv{
+	
+}
+#chooseclick{
+	margin-bottom: 40px;
+	margin-top:40px;
+	width: 400px;
+	height: 250px;
+	background: url('../img/choose.jpg');
+	background-repeat:no-repeat;
+   -webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:center;
+}
+#sungurtek{
+	margin-bottom: 40px;
+	margin-top:40px;
+	width: 400px;
+	height: 250px;
+	background: url('../img/sungurtek.jpg');
+	background-repeat:no-repeat;
+   -webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:center;
+}
+.aciklama{
+	display: none;
+	margin-left:-15px;
+	color:white; 
+	background-color: rgba(128, 128, 128, 0.54);
+	width: 400px;
+	height: 250px;
+}
+
+.butons{display: inline-block;vertical-align: center;}
+.butons a{
+	font-size: 16px;
+	text-align: center;
+	width: 140px;
+	height: 120px;
+	display: inline-block;
+}
+.butons a{
+	color: white;
+	text-decoration-style: none;
+}
+#webprojects a{background-color: rgba(247, 37, 37, 0.76);}
+#socialprojects a{background-color: rgba(98, 189, 58, 0.76);}
+#iletisim a{background-color: rgba(232, 230, 47, 0.76);}
+
+#webprojects a:hover {background-color:rgba(247, 37, 37, 0.99) }
+#socialprojects a:hover{background-color: rgba(98, 189, 58, 0.99);}
+#iletisim a:hover{background-color: rgba(232, 230, 47, 0.99);}
+#sosyaldiv {margin-top:60px;border-bottom:1px solid black;border-top:1px solid black;}
+#sosyaldiv h4{text-align: center; color:#0B9C1E;font-size: 22px;}
