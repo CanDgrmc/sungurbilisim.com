@@ -1,4 +1,6 @@
-nav {background-color:black;height: 40px;}
+
+
+nav {background-color:black;height: 40px; position: fixed; width: 100%;z-index: 1}
 nav ul li{list-style: none;display: inline-block;margin-top: 10px;}
 nav ul li a{color:white;padding: 10px;font-size: 16px;border-bottom:1px solid rgba(255, 255, 255, 0.28);}
 nav ul li a:hover{color:rgba(255, 255, 255, 0.28);text-decoration: none;border-bottom:1px solid white;}
@@ -15,13 +17,25 @@ header{
 }
 .container{background-color: white;}
 #girisyazisi{
+	padding-left:15px;
+	box-shadow: 0 0 5px black;
 	position: absolute;
 	top: 40%;
 	left: 35%;
 	color:white;
+	text-shadow: 0 0 5px black;
 }
-#webdiv{
-	
+#girisyazisi strong {color:black;text-shadow:0 0 5px #58D858;}
+#girisyazisi h3 {color :black;font-weight: bold;text-shadow: 0 0 5px white;}
+#webdiv{border-top:10px solid #557D41; height: 700px;}
+.navigasyon1 i{
+	color: black;
+	font-size: 20px;
+	display: block;
+}
+.navigasyon1 {
+	float: right;
+	margin-top: 200px;
 }
 #chooseclick{
 	margin-bottom: 40px;
@@ -36,6 +50,8 @@ header{
 	background-size:cover;
 	background-position:center;
 }
+#chooseclick:hover .aciklama{display: block;}
+#sungurtek:hover .aciklama{display: block;}
 #sungurtek{
 	margin-bottom: 40px;
 	margin-top:40px;
@@ -57,25 +73,32 @@ header{
 	width: 400px;
 	height: 250px;
 }
-
+#butonlar{background-color: black; height: 150px; margin-bottom: 100px;}
 .butons{display: inline-block;vertical-align: center;}
-.butons a{
-	font-size: 16px;
+.btna{
+	padding-top:40px;
+	margin-top:15px;
+	font-size: 18px;
 	text-align: center;
 	width: 140px;
 	height: 120px;
 	display: inline-block;
 }
 .butons a{
+	font-family: 'PT Sans', sans-serif;
 	color: white;
 	text-decoration-style: none;
 }
-#webprojects a{background-color: rgba(247, 37, 37, 0.76);}
-#socialprojects a{background-color: rgba(98, 189, 58, 0.76);}
-#iletisim a{background-color: rgba(232, 230, 47, 0.76);}
+#webprojects a{background-color: rgba(247, 37, 37, 0.54);}
+#socialprojects a{background-color: rgba(255, 106, 23, 0.54);}
+#iletisim a{background-color: rgba(232, 230, 47, 0.54);}
+#duyuru a{background-color:rgba(76, 195, 73, 0.54);}
 
-#webprojects a:hover {background-color:rgba(247, 37, 37, 0.99) }
-#socialprojects a:hover{background-color: rgba(98, 189, 58, 0.99);}
-#iletisim a:hover{background-color: rgba(232, 230, 47, 0.99);}
-#sosyaldiv {margin-top:60px;border-bottom:1px solid black;border-top:1px solid black;}
-#sosyaldiv h4{text-align: center; color:#0B9C1E;font-size: 22px;}
+#webprojects a:hover {text-decoration: none; background-color:rgba(247, 37, 37, 0.99) }
+#socialprojects a:hover{text-decoration: none; background-color: rgba(255, 106, 23, 0.99);}
+#iletisim a:hover{text-decoration: none; background-color: rgba(232, 230, 47, 0.99);}
+#duyuru a:hover{text-decoration: none;background-color:rgba(76, 195, 73, 0.99);}
+#sosyaldiv {border-bottom:1px solid black;border-top:1px solid black;height: 700px;}
+#sosyaldiv h4{margin-top:150px ;text-align: center; color:#557D41;font-size: 22px;}
+#duyurudiv{height: 600px;}
+.duyuruyazi{margin-top: 50px;}
