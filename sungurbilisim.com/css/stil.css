@@ -1,13 +1,13 @@
 
-
+body{overflow: hidden;}
 nav {background-color:black;height: 40px; position: fixed; width: 100%;z-index: 1}
 nav ul li{list-style: none;display: inline-block;margin-top: 10px;}
-nav ul li a{color:white;padding: 10px;font-size: 16px;border-bottom:1px solid rgba(255, 255, 255, 0.28);}
+nav ul li a{color:white;padding: 10px;font-size: 16px;}
 nav ul li a:hover{color:rgba(255, 255, 255, 0.28);text-decoration: none;border-bottom:1px solid white;}
 header{
 	position: relative;
 	height: 500px;
-	background-image: url('http://bgfons.com/upload/rainbow_texture660.jpg');
+	background-image: url('../img/bg.jpg');
 	background-repeat:repeat;
    -webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -15,13 +15,19 @@ header{
 	background-size:cover;
 	background-position:top;
 }
+dialog {
+	z-index: 1;
+}
+
 .container{background-color: white;}
 #girisyazisi{
+	float: right;
+	width: 600px;
 	padding-left:15px;
 	box-shadow: 0 0 5px black;
 	position: absolute;
 	top: 40%;
-	left: 35%;
+	left: 40%;
 	color:white;
 	text-shadow: 0 0 5px black;
 }
@@ -33,8 +39,11 @@ header{
 	font-size: 20px;
 	display: block;
 }
+.navigasyon1 i:hover {
+	color:#4B56A5;
+}
 .navigasyon1 {
-	float: right;
+	text-align: right;
 	margin-top: 200px;
 }
 #chooseclick{
@@ -73,9 +82,11 @@ header{
 	width: 400px;
 	height: 250px;
 }
-#butonlar{background-color: black; height: 150px; margin-bottom: 100px;}
+#butonslide{position: absolute;}
+#butonlar{background-color: black; height: 150px; margin-bottom: 100px;overflow: hidden;}
 .butons{display: inline-block;vertical-align: center;}
 .btna{
+	border-radius: 10px;
 	padding-top:40px;
 	margin-top:15px;
 	font-size: 18px;

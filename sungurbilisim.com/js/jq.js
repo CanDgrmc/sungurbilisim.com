@@ -30,37 +30,36 @@ function butonboyut(){
 
 $(document).ready(function(){
 	butonboyut();
-	$(document).click(function(e){
-		if (e.target!=='.btna') {
-			$('.btna').css({'padding-top':'40px'})
-		}
-	});
-/*	$('html, body').animate({
+
+	$('html, body').animate({
 			scrollTop: parseInt($('header').offset().top)
-		},500)*/
+		},500)
 	
 });
+
 $(window).on('resize',function(){
 	butonboyut();
 });
+
 $('#webprojects').click(function(e){
-		e.preventDefault();
+		
 		$('html, body').animate({
 			scrollTop: parseInt($('#webdiv').offset().top)
 		},500)
+		return false;
 
 	});
 $('#socialprojects').click(function(e){
-	e.preventDefault();
 	$('html, body').animate({
 		scrollTop:parseInt($('#sosyaldiv').offset().top)
 	},500)
+	return	false;
 });
 $('#duyuru').click(function(e){
-	e.preventDefault();
 	$('html, body').animate({
 		scrollTop:parseInt($('#duyurudiv').offset().top)
 	},500)
+	return	false;
 })
 $('#up').click(function(){
 	$('html, body').animate({

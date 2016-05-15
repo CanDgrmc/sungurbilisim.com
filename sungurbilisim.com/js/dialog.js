@@ -1,5 +1,5 @@
  var dialog = document.querySelector('dialog');
-    var showDialogButton = document.querySelector('#show-dialog');
+    var showDialogButton = document.querySelector('#iletisim');
     if (! dialog.showModal) {
       dialogPolyfill.registerDialog(dialog);
     }

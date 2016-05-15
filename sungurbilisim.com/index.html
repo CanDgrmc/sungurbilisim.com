@@ -12,13 +12,25 @@
 <body>
 <header>
 	<nav>
-		<ul>
+		<ul id="ustmenu">
 			<li><a href="">Anasayfa</a></li>
 			<li><a href="">Ekibimiz</a></li>
 			<li><a href="">Hakkımızda</a></li>
 		</ul>
 	</nav>
-
+	 <dialog class="mdl-dialog">
+    <h4 class="mdl-dialog__title">Allow data collection?</h4>
+    <div class="mdl-dialog__content">
+      <p>
+        Allowing us to collect data will let us get you the information you want faster.
+      </p>
+    </div>
+    <div class="mdl-dialog__actions">
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect close">
+  Kapat
+</button>
+    </div>
+  </dialog>
 	<div id="girisyazisi">
 		<h3>Sungur Bilişim</h3>
 		<p>Tüm web projelerinizi yeni Türk Ticaret kanunlarına göre özgün , esnek , mobil arayüz özellikleriyle yapıyoruz ve teslim ediyoruz..</p>
@@ -30,10 +42,12 @@
 <div class="container col-md-12">
 	<div class="row">
 		<div id="butonlar" class="col-md-12 col-xs-12">
+		<div id="butonslide">
 			<div id="webprojects" class="butons"><a href="" class="btna">Web </a></div>
 			<div id="socialprojects" class="butons"><a href="" class="btna">Sosyal</a></div>
-			<div id="iletisim" class="butons"><a href="" class="btna"><span>İletisim</span></a></div>
+			<div id="iletisim" class="butons"><a href="#" class="btna"><span>İletisim</span></a></div>
 			<div id="duyuru" class="butons" ><a href="" class="btna"><span>Duyurular</span></a></div>
+		</div>
 		</div>
 	</div>
 	<div class="row">
@@ -81,7 +95,7 @@
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p>
 		</div>
-		<div class="navigasyon1">
+		<div class="navigasyon1 col-md-offset-11">
 		<i class="glyphicon glyphicon-arrow-up" id="upsos"></i><br><br>
 		<i class="glyphicon glyphicon-home home"></i><br><br>
 		<i class="glyphicon glyphicon-arrow-down" id="downsos"></i>
@@ -107,7 +121,14 @@ glyphicon glyphicon-volume-up"></i>Duyurular: </h4>
 
 
 </div>
+
+<script type="text/javascript" src="js/material.min.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script src="js/minified/TweenMax.min.js"></script>
+
+<script type="text/javascript" src="js/tweenlite.js"></script>
+<script type="text/javascript" src="js/dialog.js"></script>
 <script type="text/javascript" src="js/jq.js"></script>
 
 </body>
