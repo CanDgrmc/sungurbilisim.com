@@ -1,5 +1,5 @@
+body {overflow:hidden;}
 
-body{overflow: hidden;}
 nav {background-color:black;height: 40px; position: fixed; width: 100%;z-index: 1}
 nav ul li{list-style: none;display: inline-block;margin-top: 10px;}
 nav ul li a{color:white;padding: 10px;font-size: 16px;}
@@ -15,8 +15,10 @@ header{
 	background-size:cover;
 	background-position:top;
 }
-dialog {
-	z-index: 1;
+.dialog{
+	width: 600px;
+	height:280px;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 .container{background-color: white;}
@@ -26,14 +28,14 @@ dialog {
 	padding-left:15px;
 	box-shadow: 0 0 5px black;
 	position: absolute;
-	top: 40%;
+	top: 20%;
 	left: 40%;
 	color:white;
 	text-shadow: 0 0 5px black;
 }
 #girisyazisi strong {color:black;text-shadow:0 0 5px #58D858;}
 #girisyazisi h3 {color :black;font-weight: bold;text-shadow: 0 0 5px white;}
-#webdiv{border-top:10px solid #557D41; height: 700px;}
+#webdiv{height: 700px; display: inline-block;}
 .navigasyon1 i{
 	color: black;
 	font-size: 20px;
@@ -43,10 +45,11 @@ dialog {
 	color:#4B56A5;
 }
 .navigasyon1 {
-	text-align: right;
-	margin-top: 200px;
+	display: inline-block;
+	position: absolute;right:0;margin-top: 10%;
 }
 #chooseclick{
+	display: inline-block;
 	margin-bottom: 40px;
 	margin-top:40px;
 	width: 400px;
@@ -62,6 +65,8 @@ dialog {
 #chooseclick:hover .aciklama{display: block;}
 #sungurtek:hover .aciklama{display: block;}
 #sungurtek{
+	overflow-wrap: break-word;
+	display: inline-block;
 	margin-bottom: 40px;
 	margin-top:40px;
 	width: 400px;
@@ -82,34 +87,40 @@ dialog {
 	width: 400px;
 	height: 250px;
 }
-#butonslide{position: absolute;}
-#butonlar{background-color: black; height: 150px; margin-bottom: 100px;overflow: hidden;}
-.butons{display: inline-block;vertical-align: center;}
+#butonslide{position: absolute; }
+#butonlar{background-color: rgba(35, 35, 35, 0.26); height: 150px; position: absolute;bottom: 0;}
+.butons{display: inline-block;}
 .btna{
+	box-shadow: 0 0 5px white;
 	border-radius: 10px;
-	padding-top:40px;
-	margin-top:15px;
-	font-size: 18px;
-	text-align: center;
+	padding-top:20px;
 	width: 140px;
 	height: 120px;
+	margin-top:8px;
+	font-size: 26px;
+	text-align: center;
+	
 	display: inline-block;
 }
 .butons a{
-	font-family: 'PT Sans', sans-serif;
-	color: white;
+	font-family: 'Josefin Sans', sans-serif;
+	color: rgba(0, 0, 0, 0.73);
 	text-decoration-style: none;
 }
-#webprojects a{background-color: rgba(247, 37, 37, 0.54);}
-#socialprojects a{background-color: rgba(255, 106, 23, 0.54);}
-#iletisim a{background-color: rgba(232, 230, 47, 0.54);}
-#duyuru a{background-color:rgba(76, 195, 73, 0.54);}
 
-#webprojects a:hover {text-decoration: none; background-color:rgba(247, 37, 37, 0.99) }
-#socialprojects a:hover{text-decoration: none; background-color: rgba(255, 106, 23, 0.99);}
-#iletisim a:hover{text-decoration: none; background-color: rgba(232, 230, 47, 0.99);}
-#duyuru a:hover{text-decoration: none;background-color:rgba(76, 195, 73, 0.99);}
+#webprojects a{background-color: rgba(247, 37, 37, 0.80);}
+#socialprojects a{background-color: rgba(255, 106, 23, 0.80);}
+#iletisim a{background-color: rgba(232, 230, 47, 0.80);}
+#duyuru a{background-color:rgba(76, 195, 73, 0.80);}
+
+#webprojects a:hover {text-decoration: none; background-color:orange;color:white;border:1px solid white; }
+#socialprojects a:hover{text-decoration: none; background-color: orange;color:white;border:1px solid white;}
+#iletisim a:hover{text-decoration: none; background-color: orange;color:white;border:1px solid white;}
+#duyuru a:hover{text-decoration: none;background-color:orange;color:white;border:1px solid white; }
 #sosyaldiv {border-bottom:1px solid black;border-top:1px solid black;height: 700px;}
-#sosyaldiv h4{margin-top:150px ;text-align: center; color:#557D41;font-size: 22px;}
-#duyurudiv{height: 600px;}
-.duyuruyazi{margin-top: 50px;}
+#sosyaldiv h4{margin-top:150px ;text-align: center; color:#557D41;font-size: 20px;}
+
+.duyuruyazi{padding-top: 100px;padding-left: 50px;}
+.dialogekip{height:500px;width: 600px;}
+.ekip { display: inline-block; margin-top: 15px; }
+.ekip img{height:120px;width: 150px;}

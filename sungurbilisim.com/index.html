@@ -7,24 +7,58 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/stil.css">
 <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
-	<title></title>
+<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
+	<title>Sungur Bilişim</title>
 </head>
 <body>
 <header>
 	<nav>
 		<ul id="ustmenu">
-			<li><a href="">Anasayfa</a></li>
-			<li><a href="">Ekibimiz</a></li>
+			<li><a href="index.html" id="anasayfa">Anasayfa</a></li>
+			<li><a href="" id="ekip" onclick="return false">Ekibimiz</a></li>
 			<li><a href="">Hakkımızda</a></li>
 		</ul>
-	</nav>
-	 <dialog class="mdl-dialog">
-    <h4 class="mdl-dialog__title">Allow data collection?</h4>
+	</nav >
+	<dialog class="mdl-dialog dialogekip">
+	
+	<div class="ekip col-md-6">
+		<img src="img/choose.jpg" class="">
+		<h4>adsa dsada</h4>
+		<p>adsad dsadas</p>
+	</div>
+	<div class="ekip col-md-6">
+		<img src="img/choose.jpg">
+		<h4>adsa dsada</h4>
+		<p>adsad dsadas</p>
+	</div>
+	<div class="altsatir">
+	<div class="ekip col-md-6">
+		<img src="img/choose.jpg">
+		<h4>adsa dsada</h4>
+		<p>adsad dsadas</p>
+	</div>
+	<div class="ekip col-md-6">
+		<img src="img/choose.jpg">
+		<h4>adsa dsada</h4>
+		<p>adsad dsadas</p>
+	</div></div>
+	 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect close">
+  Kapat
+</button>
+	</dialog>
+	 <dialog class="mdl-dialog dialog">
+    <div class="col-md-8 dialogicerik">
+    	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1264.758165778525!2d28.986041081292665!3d41.06639534159168!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab6e2a6c034f1%3A0x9a63dcb51573b6a!2zTWVya2V6LCBBYmlkZS1pIEjDvHJyaXlldCBDZCBObzoxNTAsIDM0MzgxIMWeacWfbGkvxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1463402827711" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="col-md-4 ">
+    <h4 class="mdl-dialog__title">İletişim</h4>
     <div class="mdl-dialog__content">
       <p>
-        Allowing us to collect data will let us get you the information you want faster.
+  Abide-i Hürriyet Caddesi No:150
+ 0212 328 10 44
+ info@chooseclick.com
       </p>
-    </div>
+    </div></div>
     <div class="mdl-dialog__actions">
       <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect close">
   Kapat
@@ -37,9 +71,6 @@
 		<p><strong>Chooseclick.com </strong> <br>Dünyadaki Bütün Web Sayfalarında İçerikler Üzerinde Chat Yapmanızı Sağlıyor.Türkiyenin ilk yerli sosyal ağ ve sosyal arama motoru projesi tamamen Türk mühendisler tarafından geliştiriliyor..</p>
 		
 	</div>
-	
-</header>
-<div class="container col-md-12">
 	<div class="row">
 		<div id="butonlar" class="col-md-12 col-xs-12">
 		<div id="butonslide">
@@ -50,10 +81,13 @@
 		</div>
 		</div>
 	</div>
+</header>
+<div class="container col-md-12">
+	
 	<div class="row">
-	<div id="webdiv" class="col-md-12">
-	<div id="chooseclick" class="col-md-6 col-md-offset-1">
-	<div class="aciklama col-md-12">
+	<div id="webdiv" class="">
+	<div id="chooseclick" class="col-md-4 ">
+	<div class="aciklama col-md-12 col-xs-12">
 		<h5>ChooseClick</h5>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -64,8 +98,8 @@
 	</div>
 	</div>
 
-	<div id="sungurtek" class="col-md-6 col-md-offset-3">
-		<div class="aciklama col-md-12">
+	<div id="sungurtek" class="col-md-4 col-md-offset-2 ">
+		<div class="aciklama col-md-12 ">
 		<h5>SungurTek</h5>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -75,17 +109,18 @@
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
 	</div>
-	<div class="row">
+	
 	<div class="navigasyon1">
 		<i class="glyphicon glyphicon-arrow-up" id="up"></i><br><br>
 		<i class="glyphicon glyphicon-home home"></i><br><br>
 		<i class="glyphicon glyphicon-arrow-down" id="down"></i>
 	</div>
-	</div>
+	
 	</div>
 	</div>
 	<div class="row">
-		<div id="sosyaldiv" class="col-md-10 col-md-offset-1">
+		<div id="sosyaldiv" >
+		<div class="col-md-10">
 			<h4>sadadsa</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -93,20 +128,21 @@
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-		</div>
-		<div class="navigasyon1 col-md-offset-11">
+			</p></div>
+			<div class="navigasyon1 ">
 		<i class="glyphicon glyphicon-arrow-up" id="upsos"></i><br><br>
 		<i class="glyphicon glyphicon-home home"></i><br><br>
 		<i class="glyphicon glyphicon-arrow-down" id="downsos"></i>
-	</div>
+	</div
+		</div>
+		>
 	</div>
 	
 	
 	<div class="row">
-	<div id="duyurudiv" class="col-md-10 col-md-offset-1">
+	<div id="duyurudiv" class="">
 
-		<div class="duyuruyazi ">
+		<div class="duyuruyazi col-md-10">
 		<h4><i class="
 glyphicon glyphicon-volume-up"></i>Duyurular: </h4>
 			<i class=""></i>
